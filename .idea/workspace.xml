@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0c65afb-e802-4cec-b16a-cde9563183f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/cvdn/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/finetune_src/cvdn/agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/cvdn/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/finetune_src/cvdn/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/cvdn/postprocess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/models/model_HAMT.py" beforeDir="false" afterPath="$PROJECT_DIR$/finetune_src/models/model_HAMT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/models/vilmodel_cmt.py" beforeDir="false" afterPath="$PROJECT_DIR$/finetune_src/models/vilmodel_cmt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/models/vlnbert_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/finetune_src/models/vlnbert_init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/r2r/agent_cmt.py" beforeDir="false" afterPath="$PROJECT_DIR$/finetune_src/r2r/agent_cmt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/r2r/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/finetune_src/r2r/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/scripts/run_cvdn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/finetune_src/scripts/run_cvdn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/scripts/run_r2r.sh" beforeDir="false" afterPath="$PROJECT_DIR$/finetune_src/scripts/run_r2r.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/scripts/run_r4r.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finetune_src/scripts/run_rxr.sh" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/VLN_pretraining$dvae_decoder.coverage" NAME="dvae_decoder Coverage Results" MODIFIED="1661475823691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finetune_src/r2r" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="347822575">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="bash" value="27" />
+          <entry key="json" value="129" />
+          <entry key="py" value="625" />
+          <entry key="sh" value="48" />
+          <entry key="txt" value="2" />
+          <entry key="yaml" value="48" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Bash" value="75" />
+          <entry key="JSON" value="129" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="625" />
+          <entry key="YAML" value="48" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="bash" value="222" />
+          <entry key="json" value="1632" />
+          <entry key="py" value="44324" />
+          <entry key="sh" value="1545" />
+          <entry key="yaml" value="23" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Bash" value="1767" />
+          <entry key="JSON" value="1632" />
+          <entry key="Python" value="44324" />
+          <entry key="YAML" value="23" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="377079577">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="21" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="2" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="2" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.30" value="2" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="30" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="bash" value="45" />
+          <entry key="json" value="191" />
+          <entry key="py" value="40007" />
+          <entry key="sh" value="885" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Bash" value="930" />
+          <entry key="JSON" value="191" />
+          <entry key="Python" value="40007" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="bash" value="16" />
+          <entry key="json" value="81" />
+          <entry key="pstat" value="2" />
+          <entry key="py" value="547" />
+          <entry key="sh" value="63" />
+          <entry key="yaml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Bash" value="79" />
+          <entry key="JSON" value="81" />
+          <entry key="Profiler Session" value="2" />
+          <entry key="Python" value="547" />
+          <entry key="YAML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1530884420">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="bash" value="5" />
+          <entry key="json" value="8" />
+          <entry key="md" value="3" />
+          <entry key="py" value="52" />
+          <entry key="sh" value="6" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Bash" value="11" />
+          <entry key="JSON" value="8" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="52" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="bash" value="2" />
+          <entry key="json" value="48" />
+          <entry key="md" value="182" />
+          <entry key="py" value="108" />
+          <entry key="sh" value="193" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Bash" value="195" />
+          <entry key="JSON" value="48" />
+          <entry key="Markdown" value="182" />
+          <entry key="Python" value="108" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="305">
+                <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>make_</find>
+      <find>spawn</find>
+      <find>LXRT</find>
+      <find>self.encoder</find>
+      <find>submit</find>
+      <find>step_eval</find>
+      <find>print</find>
+      <find>preprocess1</find>
+      <find>randomresizedcrop</find>
+      <find>get_image_feature</find>
+      <find>train(</find>
+      <find>test</find>
+      <find>test(</find>
+      <find>rollout_viz</find>
+      <find>args</find>
+      <find>self.args</find>
+      <find>rollout_ig</find>
+      <find>ob_mask</find>
+      <find>getStates</find>
+      <find>nav_vp_variable(</find>
+      <find>ig_probs</find>
+      <find>get_ig_probs_target</find>
+      <find>make_equv</find>
+      <find>get_obs</find>
+      <find>v</find>
+      <find>MultistepNavBeit</find>
+      <find>dvae</find>
+      <find>sample_num</find>
+      <find>generation</find>
+      <find>self.vln_bert_scheduler</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>sapwig</replace>
+      <replace>append</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pretrain_src_duet/run_r2r.sh" />
+        <option value="$PROJECT_DIR$/pretrain_src_duet/config/r2r_model_config.json" />
+        <option value="$PROJECT_DIR$/pretrain_src_duet/data/dataset.py" />
+        <option value="$PROJECT_DIR$/pretrain_src_duet/config/r2r_pretrain.json" />
+        <option value="$PROJECT_DIR$/finetune_src/scripts/generate_token.sh" />
+        <option value="$PROJECT_DIR$/analysis/dynamic_token.py" />
+        <option value="$PROJECT_DIR$/finetune_src/cvdn/main.py" />
+        <option value="$PROJECT_DIR$/finetune_src/r2r/agent_base.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/scripts/pretrain_rxr_clip.bash" />
+        <option value="$PROJECT_DIR$/pretrain_src/config/rxr_model_clip_config.json" />
+        <option value="$PROJECT_DIR$/pretrain_src/config/pretrain_rxr_clip.json" />
+        <option value="$PROJECT_DIR$/pretrain_src/data/image_data.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/scripts/submit_rxr.sh" />
+        <option value="$PROJECT_DIR$/pretrain_src/scripts/submit_r2r.sh" />
+        <option value="$PROJECT_DIR$/finetune_src/r2r/dvae_decoder.py" />
+        <option value="$PROJECT_DIR$/analysis/heatmap.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/model/beit/modeling_discrete_vae.py" />
+        <option value="$PROJECT_DIR$/analysis/distribution.py" />
+        <option value="$PROJECT_DIR$/map_nav_src/models/vlnbert_init.py" />
+        <option value="$PROJECT_DIR$/map_nav_src/r2r/agent_base.py" />
+        <option value="$PROJECT_DIR$/map_nav_src/r2r/main_nav.py" />
+        <option value="$PROJECT_DIR$/map_nav_src/r2r/agent.py" />
+        <option value="$PROJECT_DIR$/map_nav_src/utils/data.py" />
+        <option value="$PROJECT_DIR$/map_nav_src/r2r/env.py" />
+        <option value="$PROJECT_DIR$/map_nav_src/r2r/parser.py" />
+        <option value="$PROJECT_DIR$/pretrain_src_duet/model/pretrain_cmt.py" />
+        <option value="$PROJECT_DIR$/map_nav_src/models/vilmodel.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/data/r2r_tasks.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/data/r2r_data.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/utils/parser.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/model/pretrain_cmt.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/model/vilmodel.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/data/beit_data.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/data/beit_data_utils.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/main_r2r.py" />
+        <option value="$PROJECT_DIR$/pretrain_src/scripts/pretrain_r2r.bash" />
+        <option value="$PROJECT_DIR$/pretrain_src/config/pretrain_r2r.json" />
+        <option value="$PROJECT_DIR$/pretrain_src/scripts/pretrain_rxr.bash" />
+        <option value="$PROJECT_DIR$/finetune_src/r2r/main.py" />
+        <option value="$PROJECT_DIR$/finetune_src/models/vilmodel_cmt.py" />
+        <option value="$PROJECT_DIR$/finetune_src/models/model_HAMT.py" />
+        <option value="$PROJECT_DIR$/finetune_src/models/vlnbert_init.py" />
+        <option value="$PROJECT_DIR$/finetune_src/cvdn/agent.py" />
+        <option value="$PROJECT_DIR$/finetune_src/cvdn/parser.py" />
+        <option value="$PROJECT_DIR$/finetune_src/r2r/agent_cmt.py" />
+        <option value="$PROJECT_DIR$/finetune_src/scripts/run_r2r.sh" />
+        <option value="$PROJECT_DIR$/finetune_src/scripts/run_cvdn.sh" />
+        <option value="$PROJECT_DIR$/finetune_src/scripts/run_rxr.sh" />
+        <option value="$PROJECT_DIR$/finetune_src/cvdn/env.py" />
+        <option value="$PROJECT_DIR$/finetune_src/r2r/env.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-1512" />
+    <option name="y" value="-15" />
+    <option name="width" value="1512" />
+    <option name="height" value="865" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="VLN-pretraining-clean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VLN-pretraining-clean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VLN-pretraining-clean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VLN-pretraining-clean" type="462c0819:PsiDirectoryNode" />
+              <item name="finetune_src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VLN-pretraining-clean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VLN-pretraining-clean" type="462c0819:PsiDirectoryNode" />
+              <item name="finetune_src" type="462c0819:PsiDirectoryNode" />
+              <item name="cvdn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VLN-pretraining-clean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VLN-pretraining-clean" type="462c0819:PsiDirectoryNode" />
+              <item name="finetune_src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VLN-pretraining-clean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VLN-pretraining-clean" type="462c0819:PsiDirectoryNode" />
+              <item name="finetune_src" type="462c0819:PsiDirectoryNode" />
+              <item name="r2r" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VLN-pretraining-clean" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VLN-pretraining-clean" type="462c0819:PsiDirectoryNode" />
+              <item name="finetune_src" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/pretrain_src/data/beit_data.py" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pretrain_src/scripts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.dvae_decoder">
+    <configuration name="dvae_decoder" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="VLN-pretraining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/finetune_src/r2r" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/finetune_src/r2r/dvae_decoder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pretrain_cmt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="VLN-pretraining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pretrain_src/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pretrain_src/model/pretrain_cmt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="vlnbert_init" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="VLN-pretraining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/finetune_src/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/finetune_src/models/vlnbert_init.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.pretrain_cmt" />
+      <item itemvalue="Python.vlnbert_init" />
+      <item itemvalue="Python.dvae_decoder" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dvae_decoder" />
+        <item itemvalue="Python.vlnbert_init" />
+        <item itemvalue="Python.pretrain_cmt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0c65afb-e802-4cec-b16a-cde9563183f4" name="Default Changelist" comment="" />
+      <created>1642028198403</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642028198403</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1920" y="-98" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986631" visible="true" weight="0.23961662" />
+      <window_info id="Structure" order="1" sideWeight="0.5013369" side_tool="true" weight="0.17891374" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32914287" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32871288" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49946752" visible="true" weight="0.1009901" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32914287" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5005325" side_tool="true" weight="0.13267326" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="Remote Host" order="4" />
+      <window_info anchor="right" id="SciView" order="5" />
+      <window_info anchor="right" id="R Packages" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="1" visible="true" weight="0.16144578" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Remote Host" order="0" />
+      <window_info anchor="right" id="R Graphics" order="1" />
+      <window_info anchor="right" id="R Packages" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pretrain_src/main_r2r_beit.py" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/utils/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4410">
+          <caret line="294" column="37" selection-start-line="294" selection-start-column="37" selection-end-line="294" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/utils/save.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/utils/distributed.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/utils/misc.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/optim/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/model/image_pretrain.py" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/model/vqgan_model.py" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/model/pretrain_cmt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4240">
+          <caret line="311" column="79" selection-start-line="311" selection-start-column="79" selection-end-line="311" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/model/vision_transformer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-662" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/model/vilmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="379" column="88" lean-forward="true" selection-start-line="379" selection-start-column="88" selection-end-line="379" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/scripts/pretrain_r2r_clip.bash" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/scripts/pretrain_rxr_clip.bash" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/data/r2r_tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="873" column="21" selection-start-line="873" selection-start-column="21" selection-end-line="873" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/config/package.json" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/data/r2r_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4647">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/data/beit_data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3939">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/data/beit_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/data/common.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/data/image_data.py" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/data/loader.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/config/pretrain_r2r_clip.json" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/config/r2r_model_clip_config.json" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/main_r2r.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="148" column="43" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/config/pretrain_rxr.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/config/pretrain_rxr_clip.json" />
+    <entry file="file://$PROJECT_DIR$/pretrain_src/scripts/pretrain_rxr.bash">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/config/r2r_model_config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/config/pretrain_r2r.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/scripts/pretrain_r2r.bash">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrain_src/model/beit/modeling_discrete_vae.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#524#545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/r2r/agent_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/r2r/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/r2r/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1311">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/models/vilmodel_cmt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="651" column="45" selection-start-line="651" selection-start-column="45" selection-end-line="651" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/models/vlnbert_init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="71" column="32" lean-forward="true" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/models/model_HAMT.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="55" column="67" lean-forward="true" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/cvdn/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2515">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/cvdn/postprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/scripts/run_r2r.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/cvdn/agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="545" column="30" selection-start-line="545" selection-start-column="30" selection-end-line="545" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/cvdn/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="104" column="79" lean-forward="true" selection-start-line="104" selection-start-column="79" selection-end-line="104" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/r2r/agent_cmt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="847" column="34" selection-start-line="847" selection-start-column="34" selection-end-line="847" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/scripts/run_r4r.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/r2r/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#53#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/cvdn/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/scripts/run_rxr.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finetune_src/scripts/run_cvdn.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="305">
+            <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
