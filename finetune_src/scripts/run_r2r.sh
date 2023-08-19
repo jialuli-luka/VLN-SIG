@@ -44,7 +44,7 @@ flag="--root_dir ../datasets
       --batch_size 6
       --optim adamW
 
-      --ml_weight 0.15
+      --ml_weight 0.1
 
       --feat_dropout 0.4
       --dropout 0.5"
@@ -57,4 +57,4 @@ CUDA_VISIBLE_DEVICES='0' python r2r/main.py $flag  \
       --ig_head 8192 \
       --ig_path ../dvae_probs.hdf5 \
       --weighted_token \
-      --train_ig 0.5
+      --train_ig 0.7
