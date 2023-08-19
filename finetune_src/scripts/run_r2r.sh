@@ -57,4 +57,4 @@ CUDA_VISIBLE_DEVICES='0' python r2r/main.py $flag  \
       --ig_head 8192 \
       --ig_path ../dvae_probs.hdf5 \
       --weighted_token \
-      --train_ig 0.7
+      --train_ig 0.6
